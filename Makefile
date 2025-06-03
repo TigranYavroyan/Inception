@@ -1,10 +1,11 @@
 COMPOSE_FILE	= srcs/docker-compose.yml
 
-COMPOSE			= docker compose -f $(COMPOSE_FILE)
+COMPOSE			= docker-compose -f $(COMPOSE_FILE)
 MKDIR			= mkdir -p
 RM				= rm -rf
 
-DATA_DIR		= $(HOME)/data
+USER			= /home/tyavroya
+DATA_DIR		= $(USER)/data
 DB_DIR			= $(DATA_DIR)/mariadb
 WP_DIR			= $(DATA_DIR)/wordpress
 
