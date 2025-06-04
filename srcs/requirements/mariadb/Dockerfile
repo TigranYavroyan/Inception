@@ -15,6 +15,8 @@ COPY ./tools/run_db.sh /
 
 WORKDIR /
 
+EXPOSE 3306
+
 RUN chmod +x /run_db.sh
 
 CMD [ "/run_db.sh" ]
