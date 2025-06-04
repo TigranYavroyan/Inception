@@ -1,6 +1,6 @@
 COMPOSE_FILE	= srcs/docker-compose.yml
 
-COMPOSE			= docker-compose -f $(COMPOSE_FILE)
+COMPOSE			= docker compose -f $(COMPOSE_FILE)
 MKDIR			= mkdir -p
 RM				= rm -rf
 

@@ -14,4 +14,4 @@ if [ -f ./default.conf ]; then
     rm -rf default.conf
 fi
 
-nginx -g "daemon off;"
+exec nginx -g "daemon off;"

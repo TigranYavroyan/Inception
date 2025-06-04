@@ -20,8 +20,6 @@ RUN apt-get install -y mariadb-client && \
 	php${PHP_VERSION}-mbstring \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN sed -i "s/listen = .*/listen = 0.0.0.0:9000/" /etc/php/${PHP_VERSION}/fpm/pool.d/www.conf
-
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
 	&& chmod +x wp-cli.phar \
 	&& mv wp-cli.phar /usr/local/bin/wp
